@@ -46,6 +46,9 @@ ul {
     --earth-mid: #6B4226;
     --sand: #D9C3A3;
     --sage: #7A9472;
+    --sage-light: #A9C7B4;
+    --forest: #2C4A3B;
+    --blush: #EFD9CE;
     --font-heading: 'Cormorant Garamond', Georgia, serif;
     --font-body: 'Lato', system-ui, sans-serif;
     --max-width: 1200px;
@@ -110,6 +113,15 @@ ul {
 .btn-outline:hover {
     background: var(--clay);
     color: #fff;
+}
+
+.btn-light {
+    background: var(--warm-white);
+    color: var(--clay);
+}
+
+.btn-light:hover {
+    background: var(--cream);
 }
 
 /* 4. NAV */
@@ -468,6 +480,311 @@ ul {
     color: var(--clay);
 }
 
+/* 8B. REFLECTION CIRCLES */
+.rc-intro {
+    padding: 110px 0 70px;
+    background: var(--cream);
+    text-align: center;
+}
+
+.rc-intro-inner {
+    max-width: 760px;
+}
+
+.rc-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--clay);
+    margin-bottom: 22px;
+}
+
+.rc-eyebrow-line {
+    width: 28px;
+    height: 1px;
+    background: var(--clay);
+    display: inline-block;
+}
+
+.rc-accent {
+    font-style: italic;
+    color: var(--clay);
+}
+
+.rc-tagline {
+    font-family: var(--font-heading);
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--earth-mid);
+    margin-bottom: 36px;
+}
+
+.rc-cta {
+    margin-bottom: 56px;
+}
+
+.rc-intro-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    text-align: left;
+}
+
+.rc-intro-text p {
+    color: var(--earth-mid);
+    font-size: 0.98rem;
+    line-height: 1.8;
+}
+
+.rc-what {
+    padding: 110px 0;
+    background: var(--warm-white);
+}
+
+.rc-what-sub {
+    color: var(--earth-mid);
+    font-size: 1.02rem;
+    max-width: 640px;
+    margin-bottom: 48px;
+    line-height: 1.8;
+}
+
+.rc-features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    margin-bottom: 36px;
+}
+
+.rc-feature {
+    background: var(--cream);
+    padding: 32px 26px;
+}
+
+.rc-feature-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--sage);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.rc-feature h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--earth);
+    margin-bottom: 10px;
+}
+
+.rc-feature p {
+    font-size: 0.9rem;
+    color: var(--earth-mid);
+    line-height: 1.7;
+}
+
+.rc-note {
+    background: rgba(122, 148, 114, 0.14);
+    padding: 28px 32px;
+}
+
+.rc-note p {
+    color: var(--earth-mid);
+    font-size: 0.98rem;
+    line-height: 1.75;
+}
+
+.rc-note strong {
+    color: var(--earth);
+    font-weight: 700;
+}
+
+.rc-why {
+    padding: 110px 0;
+    background: var(--cream);
+}
+
+.rc-why-inner {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.rc-why-text p {
+    color: var(--earth-mid);
+    margin-bottom: 20px;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.rc-quote {
+    background: var(--blush);
+    padding: 44px 40px;
+}
+
+.rc-quote-mark {
+    font-family: var(--font-heading);
+    font-size: 2.6rem;
+    color: var(--clay);
+    line-height: 1;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.rc-quote p {
+    font-family: var(--font-heading);
+    font-style: italic;
+    font-size: 1.5rem;
+    color: var(--earth);
+    line-height: 1.3;
+}
+
+.rc-foundations {
+    padding: 100px 0;
+    background: var(--forest);
+}
+
+.rc-foundations-label {
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(253, 250, 246, 0.6);
+    margin-bottom: 18px;
+}
+
+.rc-foundations-heading {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 400;
+    color: var(--warm-white);
+    margin-bottom: 44px;
+}
+
+.rc-letter {
+    color: var(--sage-light);
+}
+
+.rc-letter--accent {
+    color: var(--sand);
+}
+
+.rc-foundations-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.rc-foundations-cols p {
+    color: rgba(253, 250, 246, 0.82);
+    font-size: 1rem;
+    line-height: 1.85;
+}
+
+.rc-foundations-pull {
+    font-family: var(--font-heading);
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.rc-membership {
+    padding: 110px 0;
+    background: var(--warm-white);
+}
+
+.rc-membership-card {
+    background: var(--clay);
+    padding: 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.rc-membership-heading {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.rc-price {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.rc-price-amount {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    color: #fff;
+}
+
+.rc-price-period {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.rc-membership-copy {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.98rem;
+    line-height: 1.8;
+}
+
+.rc-membership-label {
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 18px;
+}
+
+.rc-checklist li {
+    display: flex;
+    gap: 12px;
+    color: #fff;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.rc-checklist li::before {
+    content: '\2713';
+    color: var(--sand);
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.rc-membership-right .btn {
+    margin-top: 10px;
+}
+
+.rc-closing {
+    text-align: center;
+    font-family: var(--font-heading);
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--clay);
+    padding: 0 24px 110px;
+    background: var(--warm-white);
+    letter-spacing: 0.02em;
+}
+
 /* 9. COMMUNITY */
 .community {
     padding: 110px 0;
@@ -746,6 +1063,22 @@ ul {
     .offerings-overlay {
         padding: 0 40px;
     }
+
+    .rc-intro-text,
+    .rc-why-inner,
+    .rc-foundations-cols,
+    .rc-membership-card {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .rc-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rc-membership-card {
+        padding: 48px 32px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -764,6 +1097,14 @@ ul {
 
     .offerings-grid {
         grid-template-columns: 1fr;
+    }
+
+    .rc-features {
+        grid-template-columns: 1fr;
+    }
+
+    .rc-membership-card {
+        padding: 36px 24px;
     }
 
     .offering-card {
